@@ -7,7 +7,7 @@ extern "C" {
 #endif
 
 /*
-Copyright (c) 2012, Insomniac Games
+Copyright (c) 2014, Insomniac Games
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
