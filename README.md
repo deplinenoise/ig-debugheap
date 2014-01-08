@@ -1,9 +1,8 @@
-
 ig-debugheap - A debugging heap
 =============================================================================
 
 This is a debug heap useful when trying to track down memory errors (especially
-on Windows, where there's no Valgrind.) It is written in C89, and works on Mac,
+on Windows, where there's no Valgrind.) It is written in C, and works on Mac,
 Linux and Windows.
 
 This package provides the following features:
