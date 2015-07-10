@@ -505,7 +505,7 @@ void DebugHeapFree(DebugHeap* heap, void* ptr_in)
   ptr = (uintptr_t) ptr_in;
 
   relative_offset = ptr - (uintptr_t) heap->m_BaseAddress;
-  page_index = (uint32_t) relative_offset / kPageSize;
+  page_index = (uint32_t) (relative_offset / kPageSize);
 
   ASSERT_FATAL(page_index < heap->m_PageCount, "Invalid pointer %p freed", ptr_in);
 
