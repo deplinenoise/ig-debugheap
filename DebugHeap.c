@@ -221,7 +221,7 @@ DebugHeap* DebugHeapInit(size_t mem_size_bytes)
   const size_t total_pages       = bookkeeping_pages + mem_page_count;
   const size_t total_bytes       = total_pages * kPageSize;
 
-  char* range = VmAllocate(total_bytes);
+  char* range = (char *)VmAllocate(total_bytes);
   if (!range)
   {
     return NULL;
